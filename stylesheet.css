@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg4.jpg');
+    background-size: cover;
+    background-position: initial ;
+    font-family: Arial, sans-serif;
+}
+body {
+    color: aliceblue;
+    text-align: center;
+}
+/* Typewriter effect */
+.home{ display: inline-block; }
+.home h1 {
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22), cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+@keyframes typing {
+    from { width: 0; }
+}
+/* Sidebar Elements */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sidebar.jpeg');
+    background-position: initial;
+    padding-top: 20px;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: #1a1a1a;
+}
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.sidebar a:hover {
+    background: linear-gradient(45deg, #ff0000, #ff8c00); /* Gradient background */
+    color: #fff; /* Change text color to white */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add a slight text shadow */
+    transform: scale(1.05); /* Slightly enlarge the link */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+/* Sidebar Image */
+.sidebar img {
+    width: 150px;  /* Set a fixed width */
+    height: 150px; /* Set the height to match the width */
+    border-radius: 50%; /* This creates a perfect circle */
+    object-fit: cover; /* Ensures the image fits within the circle without distortion */
+    margin-bottom: 20px; /* Space between the image and the links */
+    border: 10px #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
