@@ -1,15 +1,22 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg4.jpg');
-    background-size: cover;
-    background-position: initial ;
     font-family: Arial, sans-serif;
-}
-body {
     color: aliceblue;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 /* Typewriter effect */
-.home{ display: inline-block; }
+.home{ 
+    display: inline-block;
+}
+
+section {
+    height: 100vh;
+}
 .home h1 {
     text-align: center;
     font-size: 5em;
@@ -30,11 +37,11 @@ body {
 /* Sidebar Elements */
 .sidebar {
     height: 100%;
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sidebar.jpeg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sidebar2.jpg');
     background-position: initial;
     padding-top: 20px;
     text-align: center;
@@ -67,4 +74,38 @@ body {
 
 html {
     scroll-behavior: smooth;
+}
+
+.about {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    border: 2px;
+    box-shadow: 0 0 5px #f30a0a, 0 0 25px #f30a0a;
+    height: auto;
+    width: 50%;
+    border-radius: 5em;
+    transition: 0.5s ease;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
