@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+/* Sidebar adjustments */
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sidebar2.jpg');
+    background-position: initial;
+    padding-top: 50px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Allow sidebar scrolling if it overflows */
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+/* Sidebar hover effect */
+.sidebar a:hover {
+    background: linear-gradient(45deg, #ff0000, #ff8c00);
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Sidebar image styling */
+.sidebar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 10px #fff;
+}
+
+/* Content adjustments */
+section {
+    margin-left: 220px; /* Ensure the content is not hidden behind the sidebar */
+    padding: 20px;
+}
+
+/* Home section */
+.home h1 {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22), cursor .4s step-end infinite alternate;
+}
+
+/* Typing effect */
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+/* About section */
+.about {
+    min-height: 100vh;
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    box-shadow: 0 0 5px #f30a0a, 0 0 25px #f30a0a;
+    height: auto;
+    width: 50%;
+    border-radius: 5em;
+    transition: 0.5s ease;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+}
