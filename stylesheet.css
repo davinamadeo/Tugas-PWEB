@@ -81,11 +81,12 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    padding-top: 50px;
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
     width: 100%;
     padding: 78px 0px;
-    background-color: #191919;
+    
 }
 
 .about img {
@@ -108,4 +109,60 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.sma {
+    margin: 50px auto;
+}
+
+/* Style the link container */
+.link {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style the heading */
+.link h1 {
+    font-size: 24px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+/* Style the links */
+.link a {
+    display: inline-block;
+    width: 100px; 
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 15px;
+    padding: 0; 
+    font-size: 16px;
+    color: #fff;
+    background-color: #2f2f2f;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for links */
+.link a:hover {
+    background: linear-gradient(45deg, #ff0000, #ff8c00); /* Gradient background */
+    color: #fff; /* Change text color to white */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add a slight text shadow */
+    transform: scale(1.05); /* Slightly enlarge the link */
+    transition: all 0.3s ease;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .link a {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
 }
